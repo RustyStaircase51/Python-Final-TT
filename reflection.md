@@ -1,4 +1,4 @@
-	There were a lot of hard parts throughout this final program; however, if I had to choose one, I would go with having to do validation throughout the program.
+There were a lot of hard parts throughout this final program; however, if I had to choose one, I would go with having to do validation throughout the program.
 Specifically, the parts where the program had to search through a list and print whether they found the item or not.
 I kept running into bugs during validation because I would forget to indent the lines correctly or put in the wrong type of validation.
 It was definitely the most frustrating part of the assignment. 
@@ -17,4 +17,4 @@ Which made the bug fixes seem more overwhelming then they actaully were.
 	My save/load system works off of the JSON library. 
 It involves saving the lists: all_products, all_vendors, and all_purchase_orders to a dictionary then creating/saving to the JSON file "inventory_data".The JSON file is then loaded in at the start of the program (in the main.py).	
 	If I had another week I would go and take the time to organize the files down another level and seperate the "inventory_manager" into 3 sections. 
-I would also love to add a bit more errorvalidation, since there are some parts I had to gloss over in order to study for other classes' finals.
+I would also love to add a bit more error validation, since there are some parts I had to gloss over in order to study for other classes' finals.
