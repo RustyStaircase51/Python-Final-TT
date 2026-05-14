@@ -1,0 +1,28 @@
+1. 
+Products are stored by creating a product object using the class "Product" from models.py.
+This product object is append to the list "all_products" (located in inventory_manager.py).
+The "all_products" list is where the information gets put if you load in a JSON file.
+
+2. 
+Purchase Orders are connected to products by Product ID number.
+The product ID number is used to obtain and calculate the unit price times the items ordered.
+Purchase Orders are connected to vendors by Vendor ID.
+This allows the user to know where the order is coming from.
+
+3.
+Once a shipment is marked as received the product ID number is checked by the program.
+The program then adds the number of items to the Product object's in_stock value.
+This means the all_product list is updated and the shipment is set to received.
+
+4.
+Product information, Vendor information, and PO information get saved to a dictionary "data".
+Data is written to the file, "inventory_data.json", in some cases creating the file.
+"Inventory_data.json" is then read in at the start of the program and any information saved to "inventory_data.json"
+will be added back to the program in the corresponding lists.
+If no data exists empty lists will be returned to the corresponding lists.
+
+5.
+One bug that tripped me up was trying to do all_vendors += [new_product].
+This doesn't work inside a function since Python assumes it's a local variable, not global.
+To fix this I did all_vendors.append(new_product).
+This mutates the list which is allowed inside of functions.
